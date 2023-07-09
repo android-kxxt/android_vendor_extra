@@ -14,6 +14,9 @@ $(call inherit-product, vendor/pfa/common.mk)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 #$(call inherit-product, vendor/gms/gms_full.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-$(shell echo -n $(TARGET_PRODUCT) | sed -e 's/^[a-z]*_//g')/device.mk)
+
 PRODUCT_PACKAGES += \
     F-Droid \
     F-DroidPrivilegedExtension
