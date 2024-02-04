@@ -19,3 +19,8 @@ PRODUCT_PACKAGES += \
     F-DroidPrivilegedExtension
 
 PRODUCT_ADB_KEYS := /home/kxxt/.android/adbkey.pub
+
+# RRO
+
+PRODUCT_PACKAGES += \
+    CaptivePortalOverride

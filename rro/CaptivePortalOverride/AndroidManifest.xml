@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.networkstack.overlay.capative_portal">
+    <overlay android:targetPackage="com.android.networkstack"
+                   android:targetName="NetworkStackConfig"
+                   android:isStatic="true"
+                   android:priority="500"/>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="config_captive_portal_http_url" translatable="false">http://www.google.cn/generate_204</string>
+    <string name="config_captive_portal_https_url" translatable="false">https://www.google.cn/generate_204</string>
+    <string-array name="config_captive_portal_fallback_urls" translatable="false">
+         <item>http://g.cn/generate_204</item>
+         <item>http://www.qualcomm.cn/generate_204</item>
+    </string-array>
+</resources>

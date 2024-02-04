@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "CaptivePortalOverride",
+    product_specific: true
+}
