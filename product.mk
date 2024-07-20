@@ -15,7 +15,7 @@ $(call inherit-product, vendor/pfa/common.mk)
 #$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
 
 # MicroG
-WITH_GMS := true
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-$(shell echo -n $(TARGET_PRODUCT) | sed -e 's/^[a-z]*_//g')/device.mk)
