@@ -1,8 +1,8 @@
-PRODUCT_PACKAGES += \
-    ih8sn
+# PRODUCT_PACKAGES += \
+#     ih8sn
 
-PRODUCT_COPY_FILES += \
-    vendor/extra/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
+# PRODUCT_COPY_FILES += \
+#     vendor/extra/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
