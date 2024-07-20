@@ -20,9 +20,10 @@ WITH_GMS := true
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-$(shell echo -n $(TARGET_PRODUCT) | sed -e 's/^[a-z]*_//g')/device.mk)
 
-PRODUCT_PACKAGES += \
-    F-Droid \
-    F-DroidPrivilegedExtension
+# Included in microg
+# PRODUCT_PACKAGES += \
+#     F-Droid \
+#     F-DroidPrivilegedExtension
 
 PRODUCT_ADB_KEYS := /home/kxxt/.android/adbkey.pub
 
