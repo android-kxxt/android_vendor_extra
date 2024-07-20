@@ -10,9 +10,12 @@ SELINUX_IGNORE_NEVERALLOWS := true
 $(call inherit-product, vendor/pfa/common.mk)
 
 # Gapps
-#$(call inherit-product, vendor/gms/products/gms.mk)
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-#$(call inherit-product, vendor/gms/gms_full.mk)
+#$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+#$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+#$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
+
+# MicroG
+WITH_GMS := true
 
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-$(shell echo -n $(TARGET_PRODUCT) | sed -e 's/^[a-z]*_//g')/device.mk)
