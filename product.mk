@@ -31,3 +31,12 @@ PRODUCT_ADB_KEYS := /home/kxxt/.android/adbkey.pub
 
 PRODUCT_PACKAGES += \
     CaptivePortalOverride
+
+# Tailscale
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += external/tailscale/sepolicy
+
+PRODUCT_PACKAGES += \
+    tailscale \
+    tailscaled \
+    init.tailscale.rc
