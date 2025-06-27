@@ -25,7 +25,7 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-$(shell echo -n $(TAR
 #     F-Droid \
 #     F-DroidPrivilegedExtension
 
-PRODUCT_ADB_KEYS := /home/kxxt/.android/adbkey.pub
+PRODUCT_ADB_KEYS := adbkey.pub
 
 # RRO
 
