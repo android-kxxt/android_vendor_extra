@@ -40,3 +40,5 @@ PRODUCT_PACKAGES += \
     tailscale \
     tailscaled \
     init.tailscale.rc
+
+PRODUCT_PACKAGES += KxxtUpdaterOverlay
