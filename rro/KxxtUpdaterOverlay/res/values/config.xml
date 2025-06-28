@@ -9,7 +9,7 @@
     <!-- device: ro.lineage.device e.g. lmi -->
     <!-- type: ro.lineage.releasetype e.g. UNOFFICIAL -->
     <!-- incr: ro.build.version.incremental e.g. 1751107720 -->
-    <string name="updater_server_url" translatable="false">https://github.com/android-kxxt/ota/raw/refs/heads/main/{device}-{type}.json</string>
+    <string name="updater_server_url" translatable="false">https://github.com/android-kxxt/ota/raw/refs/heads/main/{device}-{type}-{tags}.json</string>
 
     <!-- URL to changelog -->
     <!-- Use SSG to generate a changelog page after device build -->
